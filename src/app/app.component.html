@@ -11,17 +11,18 @@
         </button>
 
    </div>
-   <div class="DIV_1">
+   
+   <div *ngFor='let case of searchResult' class="DIV_1">
 	<div class="DIV_2">
 		<a href="" id="A_3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_ShXIjIw-IpgcD4xG0SKGJwDKyKXueexkq_ZhXWzB-7u-g3u5_rW_BXldYMsiAPu0_e5WPAI" alt="Story image for case search portal from ITProPortal" id="IMG_4" /></a>
 		<div id="DIV_5">
 			<h3 id="H3_6">
 			<!--	<a href="" id="A_7">The three waves of innovation in management</a>-->
-			The three waves of innovation in management
+		{{ case.id }}   :  {{case.name}}
 			</h3>
 
 			<div class="DIV_13">
-				We are entering the third of three major phases of  of another, new and disconnected system to solve that specific use
+			{{case.description}}
 			</div>
 		</div>
 	</div>
